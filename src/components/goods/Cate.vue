@@ -54,12 +54,7 @@
       ></el-pagination>
     </el-card>
     <!-- 添加分类对话框 -->
-    <el-dialog
-      title="提示"
-      :visible.sync="addCateDialogVisible"
-      width="30%"
-      :before-close="handleClose"
-    >
+    <el-dialog title="提示" :visible.sync="addCateDialogVisible" width="30%" @close="handleClose">
       <!-- 对话框主体表单 -->
       <el-form ref="addCateFormRef" :model="addCateForm" label-width="80px">
         <el-form-item label="分类名称">
