@@ -8,3 +8,10 @@ html,body,#app{
 .el-cascader-panel {
     height: 300px !important;
   }
+  .el-step__title{
+      font-size: 14px;
+  }
+  .el-tabs--left .el-tabs__header.is-left{
+      margin-right: 100px;
+      margin-left: 45px;
+  }
