@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Cascader, Select, Option, Tree, Tag, MessageBox, Dialog, Pagination, Tooltip, Button, Input, Form, FormItem, Message, Main, Aside, Header, Container, Menu, MenuItem, MenuItemGroup, Submenu, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn, Switch } from 'element-ui'
+import { Alert, TabPane, Cascader, Select, Option, Tree, Tag, MessageBox, Dialog, Pagination, Tooltip, Button, Input, Form, FormItem, Message, Main, Aside, Header, Container, Menu, MenuItem, MenuItemGroup, Submenu, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn, Switch, Tabs } from 'element-ui'
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox
 Vue.use(Button)
@@ -30,3 +30,6 @@ Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
+Vue.use(Tabs)
+Vue.use(TabPane)
+Vue.use(Alert)
