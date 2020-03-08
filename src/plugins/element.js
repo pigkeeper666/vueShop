@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import { Upload, CheckboxGroup, Checkbox, Steps, Step, Alert, Cascader, Select, Option, Tree, Tag, MessageBox, Dialog, Pagination, Tooltip, Button, Input, Form, FormItem, Message, Main, Aside, Header, Container, Menu, MenuItem, MenuItemGroup, Submenu, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn, Switch, Tabs, TabPane } from 'element-ui'
+import Timeline from './timeline/index'
+import TimelineItem from './timeline-item/index'
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox
 Vue.use(Button)
@@ -38,3 +40,5 @@ Vue.use(Steps)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
