@@ -3,6 +3,13 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios'
 import TreeTable from 'vue-table-with-tree-grid'
+// 导入vue-quill-editor（富文本编辑器）
+import VueQuillEditor from 'vue-quill-editor'
+// 导入vue-quill-editor的样式
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+
 import './plugins/element.js'
 import './assets/css/global.css'
 import './assets/fonts/iconfont.css'
@@ -18,6 +25,7 @@ axios.interceptors.request.use(config => {
 Vue.prototype.$http = axios
 // 全局注册组件
 Vue.component('tree-table', TreeTable)
+Vue.use(VueQuillEditor)
 // 将时间转化成某格式
 Vue.filter('dateFormat', function (originVal) {
   const dt = new Date(originVal)
