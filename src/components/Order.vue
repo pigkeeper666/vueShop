@@ -29,12 +29,13 @@
         <el-table-column label="下单时间" prop="create_time">
           <template slot-scope="scope">{{scope.row.create_time | dateFormat}}</template>
         </el-table-column>
-        <el-table-column label="操作" width="125px">
+        <el-table-column label="操作">
           <template>
             <!-- 修改地址 -->
             <el-button size="mini" type="primary" icon="el-icon-edit" @click="showEditAddress"></el-button>
             <!-- 查看物流信息 -->
             <el-button size="mini" type="success" icon="el-icon-location" @click="showProgress"></el-button>
+            <!-- <el-button size="mini" type="success" icon="el-icon-location"></el-button>123 -->
           </template>
         </el-table-column>
       </el-table>
@@ -185,8 +186,8 @@ export default {
 
 <style lang="less" scoped>
 // 导入时间线的样式
-@import '../plugins/timeline/timeline.css';
-@import '../plugins/timeline-item/timeline-item.css';
+// @import '../plugins/timeline/timeline.css';
+// @import '../plugins/timeline-item/timeline-item.css';
 .el-card {
   margin-top: 15px;
   .el-table {

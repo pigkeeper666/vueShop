@@ -107,7 +107,7 @@
       <!-- 对话框主体区域 -->
       <el-form :model="editForm" :rules="editFormRules" ref="editFormRef" label-width="70px">
         <el-form-item label="用户名" prop="username">
-          <el-input v-model="editForm.username"></el-input>
+          <el-input v-model="editForm.username" disabled></el-input>
         </el-form-item>
         <el-form-item label="邮箱" prop="email">
           <el-input v-model="editForm.email"></el-input>
@@ -391,7 +391,7 @@ export default {
       if (res.meta.status !== 200) {
         return this.$message.error('删除失败')
       }
-      this.$message.success('删除失败')
+      this.$message.success('删除成功')
       this.getUserList()
     },
     // 打开分配角色对话框
@@ -421,6 +421,7 @@ export default {
         return this.$message.error('分配角色失败')
       }
       this.$message.success('成功分配角色')
+      this.getUserList()
       this.setRoleDialogVisible = false
     },
     // 关闭分配角色

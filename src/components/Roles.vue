@@ -11,7 +11,7 @@
       <!-- 添加角色按钮 -->
       <el-button type="primary">添加角色</el-button>
       <!-- 表格 -->
-      <el-table :data="roleList" stripe border style="width: 100%">
+      <el-table :data="roleList" stripe border style="width: 100%" row-key="id">
         <el-table-column type="expand">
           <template slot-scope="scope">
             <el-row class="border-bottom" v-for="item1 in scope.row.children" :key="item1.id">

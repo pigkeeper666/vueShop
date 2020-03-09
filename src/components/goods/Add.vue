@@ -159,7 +159,7 @@ export default {
       // 静态属性列表
       onlyTableData: [],
       // 图片上传的url 完整名称！
-      uploadURL: 'http://127.0.0.1:8888/api/private/v1/upload',
+      uploadURL: 'http://118.178.90.222:8889/api/private/v1/upload',
       // 图片上传组件的headers请求头对象 加一个token
       headerObj: { Authorization: window.sessionStorage.getItem('token') },
       // 保存预览图片的URL地址
@@ -308,6 +308,9 @@ export default {
         if (res.meta.status !== 201) {
           return this.$message.error('添加商品失败')
         }
+        console.log('rrr')
+        console.log(res)
+        console.log('rrrrreeewr')
         this.$message.success('添加商品成功')
         // 编程式导航跳转到商品列表
         this.$router.push('/goods')
